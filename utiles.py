@@ -59,5 +59,5 @@ class Proccessing:
 
         return chat_completion.choices[0].message.content
 
-    def code_corector(self, text:str)->str:
+    def code_corector(self, prompt:str, openai_key)->str:
         return True
