@@ -14,9 +14,6 @@ st.title("Dawan - AppWeb")
 # Subtitle
 st.subheader("Subtitle")
 
-key = st.secrets["OPENAIKEY"]
-st.write(key)
-
 
 # Text
 st.write("""
