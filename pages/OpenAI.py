@@ -1,10 +1,10 @@
 import streamlit as st
+from utiles import Proccessing
 
-enable = st.checkbox("Enable camera")
-picture = st.camera_input("Take a picture", disabled=not enable)
-
-key = st.sidebar.text_input("Your Api Key")
+openai_key = st.sidebar.text_input("Entez votre clé OpenAI")
+prompt = st.text_input("Entez votre texte")
 
 
-if picture:
-    st.image(picture)
+if st.button("Envoyer"):
+    process = Proccessing()
+    st.write(process.trad_with_openai(prompt, openai_key))
