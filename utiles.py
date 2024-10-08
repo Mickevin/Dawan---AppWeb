@@ -60,4 +60,4 @@ class Proccessing:
         return chat_completion.choices[0].message.content
 
     def code_corector(self, text:str)->str:
-        pass
+        return True
